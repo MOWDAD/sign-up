@@ -1,0 +1,199 @@
+*{
+    top: 0;
+    padding: o;
+}
+body{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+
+}
+.container{
+    background-color: transparent;
+    width: 600px;
+    height: 750px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 10px solid #89dd13;
+    box-shadow: 5px 5px 5px rgba(234, 24, 24, 0.4);
+    animation: rotateBorder 3s infinite linear;
+    transition: border 1s ease;
+}
+
+@keyframes rotateBorder {
+  0% {
+    
+      border-color: #ff5733;
+    }
+    25% {
+      border-color: #33ff57;
+    }
+    50% {
+      border-color: #5733ff;
+    }
+    75% {
+      border-color: #ff3366;
+    }
+    100% {
+      border-color: #33ffcc;
+    }
+
+}
+
+  
+
+.form-container{
+    width: 500px;
+    background-color: transparent;
+    height: 500px;
+    border: 20px solid  transparent;
+}
+form{
+    display: block;
+    padding: 50px;
+    text-align: left;
+}
+label{
+    font-size: 25px;
+}
+
+.password ,.cpassword, .username,.lastname,.firstname,.Username{
+    padding: 5px;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.btn{
+    text-align: center;
+    padding: 50px;
+}
+.btn button{
+    background-color: blue;
+    width: 150px;
+    height: 50px;
+    color: whitesmoke;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: rotateCd 10s infinite linear;
+    
+  }
+
+  @keyframes rotateCd {
+    0% {
+      background: linear-gradient(90deg, #ff5733, #33ff57, #5733ff, #ff3366, #33ffcc);
+      background-size: 500% 100%;
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 500% 0;
+    }
+  }
+
+/*@media screens*/
+@media (max-width: 767px) {
+    /* Styles for small screens, like Android phones */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: transparent;
+        display: flex;
+       
+        height: 100vh;
+        left: 0;
+        top: 0;
+        padding: 10px;
+    
+    }
+    .container{
+        
+        background-color: transparent;
+        width: 300px;
+        height: 700px;
+        text-align: center;
+        align-items: center;
+        padding-top: 10px;
+        padding:10px;
+        border-radius: 20px;
+        border: 10px solid #89dd13;
+        box-shadow: 10px 10px 10px rgba(234, 24, 24, 0.4);
+        top: 0;
+        position: absolute;
+    }
+    h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    .form-container{
+        width: 250px;
+        background-color: transparent;
+        height: 500px;
+        border: 20px solid  transparent;
+        border-radius: 20px;
+    }
+    form{
+        display: block;
+        padding: 0px;
+        text-align: left;
+    }
+    label{
+        font-size: 25px;
+    }
+    .password ,.cpassword, .username,.lastname,.firstname,.Username{
+      padding: 10px;
+  }
+    input{
+        width: 100%;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding-left: 30px;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+    .btn{
+        text-align: center;
+        padding: 15px;
+    }
+    .btn button{
+        background-color: blue;
+        width: 150px;
+        height: 50px;
+        color: whitesmoke;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+
+
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for tablets */
+    .center-container {
+      padding: 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    /* Styles for laptops and larger screens */
+    .center-container {
+      padding: 25px;
+    }
+  }
